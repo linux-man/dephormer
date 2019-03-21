@@ -2,7 +2,7 @@
 
 ![Screenshot](media/screenshot.jpg)
 
-[Video Sample](media/sample.mp4).
+[Video Sample](https://raw.githubusercontent.com/linux-man/dephormer/master/media/sample.mp4).
 
 #### License [GPL-3+](LICENSE)
 
