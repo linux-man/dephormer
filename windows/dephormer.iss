@@ -22,7 +22,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 LicenseFile=LICENSE.txt
-OutputBaseFilename=setup
+OutputBaseFilename=setup64
 SetupIconFile=sketch.ico
 Compression=lzma
 SolidCompression=yes
@@ -53,9 +53,8 @@ Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChang
 Root: "HKCR"; Subkey: ".stage"; ValueType: string; ValueData: "DephormerProject"; Flags: uninsdeletevalue
 Root: "HKCR"; Subkey: "DephormerProject"; ValueType: string; ValueData: "Dephormer Project"; Flags: uninsdeletekey
 Root: "HKCR"; Subkey: "DephormerProject\DefaultIcon"; ValueType: string; ValueData: "{app}\DEPHORMER.EXE,0"
-Root: "HKCR"; Subkey: "DephormerProject\shell\open\command"; ValueType: string; ValueData: "cmd.exe /K ""cd {app} && BACKSTAGE.EXE"" %1"
 Root: "HKLM"; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dephormer.exe"; ValueType: string; ValueName: "Path"; ValueData: "{app}"; Flags: uninsdeletekey
-Root: "HKLM"; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dephormer.exe"; ValueType: string; ValueName: ""; ValueData: "{app}\dephormer.exe"; Flags: uninsdeletekey
+Root: "HKLM"; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\dephormer.exe"; ValueType: string; ValueData: "{app}\dephormer.exe"; Flags: uninsdeletekey
 
 [Dirs]
 Name: "{app}\data"
