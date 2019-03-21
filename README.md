@@ -15,4 +15,4 @@ Created by Caldas Lopes
 * [controlP5](https://github.com/sojamo/controlp5)
 * [Video Export](https://github.com/hamoid/video_export_processing)
 
-More info at [Wiki](wiki).
+More info at [Wiki](https://github.com/linux-man/dephormer/wiki).
