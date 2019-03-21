@@ -7,6 +7,6 @@ Maintainer: Caldas Lopes <joao.caldas.lopes@gmail.com>
 Depends: openjdk-8-jre | oracle-java8-installer, ffmpeg
 Section: Contrib
 Priority: extra
-Homepage: https://github.com/linux-man/dephormer#readme
+Homepage: https://github.com/linux-man/dephormer
 Description: 
   Morphing Software
