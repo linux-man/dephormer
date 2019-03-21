@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dephormer
+Comment=Morphing Software
+Exec=/opt/dephormer/dephormer
+Terminal=false
+Type=Application
+Icon=dephormer
+Categories=Graphics;
