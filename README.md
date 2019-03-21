@@ -2,7 +2,7 @@
 
 ![Screenshot](media/screenshot.jpg)
 
-[Sample](media/sample.mp4).
+[Video Sample](media/sample.mp4).
 
 #### License [GPL-3+](LICENSE)
 
