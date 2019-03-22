@@ -71,7 +71,7 @@ float screenScale;
 ArrayList<Mark> marks = new ArrayList<Mark>();
 PVector[][] field;
 
-void setup() {println(PFont.list());
+void setup() {
   size(800, 600);
   imageMode(CENTER);
   rectMode(CENTER);
