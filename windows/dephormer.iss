@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Dephormer"
-#define MyAppVersion "0.9"
+#define MyAppVersion "0.9.1"
 #define MyAppPublisher "Caldas Lopes"
 #define MyAppURL "https://github.com/linux-man/dephormer"
 #define MyAppExeName "dephormer.exe"

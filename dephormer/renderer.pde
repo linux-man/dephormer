@@ -282,8 +282,8 @@ void morph(boolean first, int frames, int steps, float cycles ) {
     }
     renderImg.updatePixels();
     if(frame % steps == 0) {
-      if(first) renderImg.get((renderBoxX - renderBoxW / 2) - (i1dx - i1.width / 2), (renderBoxY - renderBoxH / 2)- (i1dy - i1.height / 2), renderBoxW, renderBoxH).save(String.format(tempPath + "/1%04d.tif", frame / steps));
-      else renderImg.get((renderBoxX - renderBoxW / 2) - (i2dx - i2.width / 2), (renderBoxY - renderBoxH / 2)- (i2dy - i2.height / 2), renderBoxW, renderBoxH).save(String.format(tempPath + "/2%04d.tif", (frames - frame) / steps));
+      if(first) renderImg.get((renderBoxX - renderBoxW / 2) - (i1dx - i1.width / 2), (renderBoxY - renderBoxH / 2)- (i1dy - i1.height / 2), renderBoxW, renderBoxH).save(String.format(tempPath + "/1%04d.png", frame / steps));
+      else renderImg.get((renderBoxX - renderBoxW / 2) - (i2dx - i2.width / 2), (renderBoxY - renderBoxH / 2)- (i2dy - i2.height / 2), renderBoxW, renderBoxH).save(String.format(tempPath + "/2%04d.png", (frames - frame) / steps));
     }
   }
 }
@@ -299,11 +299,11 @@ void mixMorph(int frames, int mixFrames) {
     progressBar.setValue(frame);
     maskValue = round(max(0, min(1, map(frame, (frames - mixFrames) / 2, frames - (frames - mixFrames) / 2 - 1, 0, 1))) * 255);
     for(int m = 0; m < maskArray.length; m++) maskArray[m] = maskValue;
-    originalImg = loadImage(String.format(tempPath + "/1%04d.tif", frame));
-    renderImg = loadImage(String.format(tempPath + "/2%04d.tif", frame));
+    originalImg = loadImage(String.format(tempPath + "/1%04d.png", frame));
+    renderImg = loadImage(String.format(tempPath + "/2%04d.png", frame));
     renderImg.mask(maskArray);
     originalImg.blend(renderImg, 0, 0, renderBoxW, renderBoxH, 0, 0, renderBoxW, renderBoxH, BLEND);
-    originalImg.save(String.format(tempPath + "/1%04d.tif", frame));
+    originalImg.save(String.format(tempPath + "/1%04d.png", frame));
   }
 }
 
@@ -319,7 +319,7 @@ void saveMorph(int frames) {
   for(int frame = 0; frame < frames; frame++) {
    renderingLabel.setText("Saving Images: " + frame + " of " + (frames - 1));
    progressBar.setValue(frame);
-   renderImg = loadImage(String.format(tempPath + "/1%04d.tif", frame));
+   renderImg = loadImage(String.format(tempPath + "/1%04d.png", frame));
     if(renderImages) renderImg.save(String.format(imagesPath, frame));
     if(renderVideo) {
       pg.beginDraw();

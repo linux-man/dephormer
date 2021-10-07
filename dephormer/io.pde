@@ -20,7 +20,7 @@ File selectFile(String title) {
   else if(title == "Save morph" && morphPath != null) chooser.setSelectedFile(new File(morphPath));
   else if(title == "Save render" && path != null) chooser.setSelectedFile(new File(path));
   chooser.setDialogTitle(title);
-  int returnVal = chooser.showOpenDialog(this.frame);
+  int returnVal = chooser.showOpenDialog((SmoothCanvas)getSurface().getNative());
   if (returnVal == JFileChooser.APPROVE_OPTION) return chooser.getSelectedFile();
   return null;
 }

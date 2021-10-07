@@ -309,13 +309,13 @@ void initP5() {
     .setGroup(aboutMsgBox)
     ;
 
-  cp5.addTextlabel("verLabel","v0.9", 50, 43)
+  cp5.addTextlabel("verLabel","v0.9.1", 50, 43)
     .setFont(createFont("Ubuntu-RI.ttf",18))
     .setColor(color(255, 116, 217))
     .setGroup(aboutMsgBox)
     ;
 
-  cp5.addTextlabel("copyLabel","© 2019 Caldas Lopes", 4, 83)
+  cp5.addTextlabel("copyLabel","© 2021 Caldas Lopes", 4, 83)
     .setFont(createFont("Ubuntu-R.ttf",14))
     .setGroup(aboutMsgBox)
     ;
@@ -492,7 +492,7 @@ void previewButton(boolean on) {
       morph(false, 9, 1, 1);
       mixMorph(10, 10);
     }
-    for(int f = 0; f < 10; f++) previewImg[f] = loadImage(String.format(tempPath + "/1%04d.tif", f));
+    for(int f = 0; f < 10; f++) previewImg[f] = loadImage(String.format(tempPath + "/1%04d.png", f));
     cursor(ARROW);
     previewSlider.setValue(0);
   }
